@@ -5,8 +5,33 @@ It's important to realize that GeoPandas is really just a nice wrapper around a 
 
 ## Getting started
 
-In other projects, I would use the Pipenvs to save out my dependencies. For the sake of this class, I want you to create a native virtual environment the way you've been doing all class. You want to install the following libraryes: `pandas`, `geopandas` and `descartes`. This last ones is required for making map graphics.
+"Cloning" a Github repo is pretty easy. You can download a zip, but it's actually a little easier to use the command line since you have to use the command line to start the project anyway. 
 
+1. Click the green "clone or download" button at the top right of the file list on this page.
+2. Copy that URL by clicking the copy button next to it.
+3. Open up your terminal and `cd` into a place where you like to keep your projects. Just `cd` into the Desktop if you don't have a place like that.
+4. Clone the repo by typing `git clone` and pasting the URL you just copied. The final command should look like:
+```
+git clone https://github.com/scottpham/cuny_geopandas.git
+```
+This will download a new folder to your location. You are not "inside" this folder yet. `cd` into it! 
+
+```
+cd cuny_geopandas
+```
+
+Next, unzip the big data files I've loaded here. Simply open the `data` folder and double click on each of the zipfiles. It should just take a second. 
+
+Finally, install your dependencies. 
+
+In other projects, I would use [Pipenvs](https://github.com/pypa/pipenv) to save my dependencies. For the sake of this class, I want you to create a native virtual environment the way you've been doing all class. You want to install the following libraries: `pandas`, `jupyter`, `geopandas` and `descartes`. This last ones is required for making map graphics.
+
+
+```
+pip install pandas jupyter geopandas descartes
+```
+
+That will take 2 - 3 minutes. You can just let it run.
 
 ## Data Sources
 
@@ -17,9 +42,9 @@ The geographic data comes from the [Census Tigerline](https://www2.census.gov/ge
 
 ## Helpful links
 
-[Geopandas reference](http://geopandas.org/install.html)
+[GeoPandas reference](http://geopandas.org/install.html)
 
-[Jonathan Soma's excellent geopandas tutorials](http://jonathansoma.com/lede/foundations-2017/classes/geopandas/mapping-with-geopandas/)
+[Jonathan Soma's excellent GeoPandas tutorials](http://jonathansoma.com/lede/foundations-2017/classes/geopandas/mapping-with-geopandas/)
 
 [Spatial Reference for getting EPSG numbers](http://spatialreference.org/ref/epsg/3310/)
 
